@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+        <div class="mainDisplay">
+            <div class="calcDisplay">
+              <input type="text" id="operation" readonly>
+              <input type="text" id="result" placeholder="0" readonly>
+            </div>
+        <div class="keyPad">
+        <button class="clrKeys" onclick="clearDisplay()" ondblclick="clearAllDisplay()">AC</button>
+        <button class="clrKeys" onclick="del()">del</button>
+        <button class="opsKeys" onclick="sqrt2()">𝑥²</button>
+        <button class="opsKeys" onclick="sqrt()">&radic;</button>
+        <button class="opsKeys" onclick="updateDisplay('/')">&divide;</button>
+        <button class="keys" onclick="updateDisplay('7')">7</button>
+        <button class="keys" onclick="updateDisplay('8')">8</button>
+        <button class="keys" onclick="updateDisplay('9')">9</button>
+        <button class="opsKeys" onclick="updateDisplay('*')">&times;</button>
+        <button class="keys" onclick="updateDisplay('4')">4</button>
+        <button class="keys" onclick="updateDisplay('5')">5</button>
+        <button class="keys" onclick="updateDisplay('6')">6</button>
+        <button class="opsKeys" onclick="updateDisplay('+')">+</button>
+        <button class="keys" onclick="updateDisplay('1')">1</button>
+        <button class="keys" onclick="updateDisplay('2')">2</button>
+        <button class="keys" onclick="updateDisplay('3')">3</button>
+        <button class="opsKeys" onclick="updateDisplay('-')">-</button>
+        <button class="keys" onclick="updateDisplay('.')">.</button>
+        <button class="keys" onclick="updateDisplay('0')">0</button>
+        <button class="keys" onclick="updateDisplay('00')">00</button>
+        <button class="opsKeys" onclick="percent()">﹪</button>
+        <button class="opsKeys" onclick="negative()">±</button>
+        <button class="equalsKey" onclick="calculate()">=</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
